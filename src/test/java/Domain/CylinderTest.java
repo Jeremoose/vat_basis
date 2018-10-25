@@ -7,10 +7,10 @@ import static org.junit.Assert.assertEquals;
 
 public class CylinderTest {
 
-    private Cylinder cylinder;
+    private static Cylinder cylinder;
 
     @BeforeClass
-    public void setup() throws Exception {
+    public static void setup() throws Exception {
         cylinder = new Cylinder(5.0, 6.0);
     }
 

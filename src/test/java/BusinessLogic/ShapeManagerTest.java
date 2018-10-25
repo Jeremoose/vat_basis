@@ -1,24 +1,22 @@
 package BusinessLogic;
 
 import Domain.*;
-
-import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class ShapeManagerTest {
 
-    private ShapeManager shapeManager;
-    private Sphere sphere;
-    private Cylinder cylinder;
-    private Cone cone;
-    private RectangularPrism rectangularPrism;
-    private SquarePyramid squarePyramid;
+    private static ShapeManager shapeManager;
+    private static Sphere sphere;
+    private static Cylinder cylinder;
+    private static Cone cone;
+    private static RectangularPrism rectangularPrism;
+    private static SquarePyramid squarePyramid;
 
     @BeforeClass
-    public void setup() throws Exception {
+    public static void setup() throws Exception {
         shapeManager = new ShapeManager();
         sphere = new Sphere(5.0);
         cylinder = new Cylinder(5.0, 6.0);

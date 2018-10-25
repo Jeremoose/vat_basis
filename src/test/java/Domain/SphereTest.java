@@ -7,10 +7,10 @@ import static org.junit.Assert.assertEquals;
 
 public class SphereTest {
 
-    private Sphere sphere;
+    private static Sphere sphere;
 
     @BeforeClass
-    public void setup() throws Exception {
+    public static void setup() throws Exception {
         sphere = new Sphere(5.0);
     }
 

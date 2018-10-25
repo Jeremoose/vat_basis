@@ -7,10 +7,10 @@ import static org.junit.Assert.assertEquals;
 
 public class ConeTest {
 
-    private Cone cone;
+    private static Cone cone;
 
     @BeforeClass
-    public void setup() throws Exception {
+    public static void setup() throws Exception {
         cone = new Cone(3, 4);
     }
 

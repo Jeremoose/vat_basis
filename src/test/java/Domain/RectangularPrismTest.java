@@ -8,10 +8,10 @@ import static org.junit.Assert.assertEquals;
 
 public class RectangularPrismTest {
 
-    RectangularPrism rectangularPrism;
+    private static RectangularPrism rectangularPrism;
 
     @BeforeClass
-    public void setup() throws Exception {
+    public static void setup() throws Exception {
         rectangularPrism = new RectangularPrism(3.0, 4.0, 5.0);
     }
 

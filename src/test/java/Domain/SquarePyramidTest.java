@@ -7,10 +7,10 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class SquarePyramidTest {
-    private SquarePyramid squarePyramid;
+    private static SquarePyramid squarePyramid;
 
     @BeforeClass
-    public void setup() throws Exception {
+    public static void setup() throws Exception {
         squarePyramid = new SquarePyramid(3.0, 2.0);
     }
 
