@@ -1,17 +1,15 @@
 package Domain;
 
-import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
-//import Domain.Cylinder;
+import static org.junit.Assert.assertEquals;
 
 public class CylinderTest {
 
     private Cylinder cylinder;
 
-    @Before
+    @BeforeClass
     public void setup() throws Exception {
         cylinder = new Cylinder(5.0, 6.0);
     }

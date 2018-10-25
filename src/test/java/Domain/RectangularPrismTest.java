@@ -1,16 +1,16 @@
 package Domain;
 
 
-import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class RectangularPrismTest {
 
     RectangularPrism rectangularPrism;
 
-    @Before
+    @BeforeClass
     public void setup() throws Exception {
         rectangularPrism = new RectangularPrism(3.0, 4.0, 5.0);
     }

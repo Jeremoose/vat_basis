@@ -1,16 +1,15 @@
 package Domain;
 
-import Domain.Cone;
-import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class ConeTest {
 
     private Cone cone;
 
-    @Before
+    @BeforeClass
     public void setup() throws Exception {
         cone = new Cone(3, 4);
     }

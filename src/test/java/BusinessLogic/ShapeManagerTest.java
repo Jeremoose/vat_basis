@@ -3,6 +3,7 @@ package BusinessLogic;
 import Domain.*;
 
 import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -16,7 +17,7 @@ public class ShapeManagerTest {
     private RectangularPrism rectangularPrism;
     private SquarePyramid squarePyramid;
 
-    @Before
+    @BeforeClass
     public void setup() throws Exception {
         shapeManager = new ShapeManager();
         sphere = new Sphere(5.0);
@@ -24,16 +25,16 @@ public class ShapeManagerTest {
         cone = new Cone(3, 4);
         rectangularPrism = new RectangularPrism(3.0, 4.0, 5.0);
         squarePyramid = new SquarePyramid(3.0, 2.0);
-    }
 
-    @Test
-    public void calculateTotalVolume_one() throws Exception {
         shapeManager.add(sphere);
         shapeManager.add(cylinder);
         shapeManager.add(cone);
         shapeManager.add(rectangularPrism);
         shapeManager.add(squarePyramid);
+    }
 
+    @Test
+    public void calculateTotalVolume_one() throws Exception {
         assertEquals(1098.53678, shapeManager.calculateTotalVolume(), 0.00001);
     }
 

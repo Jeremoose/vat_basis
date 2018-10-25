@@ -1,16 +1,15 @@
 package Domain;
 
-import Domain.Sphere;
-import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class SphereTest {
 
     private Sphere sphere;
 
-    @Before
+    @BeforeClass
     public void setup() throws Exception {
         sphere = new Sphere(5.0);
     }

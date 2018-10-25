@@ -1,16 +1,15 @@
 package Domain;
 
 
-import Domain.SquarePyramid;
-import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class SquarePyramidTest {
     private SquarePyramid squarePyramid;
 
-    @Before
+    @BeforeClass
     public void setup() throws Exception {
         squarePyramid = new SquarePyramid(3.0, 2.0);
     }
