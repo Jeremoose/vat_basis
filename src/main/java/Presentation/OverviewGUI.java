@@ -69,6 +69,7 @@ public class OverviewGUI extends JPanel {
         this.shapeSelectorField.addItem("Cone");
         this.shapeSelectorField.addItem("RectangularPrism");
         this.shapeSelectorField.addItem("SquarePyramid");
+        this.shapeSelectorField.addItem("Torus");
         add(shapeSelectorField, gbc);
 
         gbc.weightx = 1;
